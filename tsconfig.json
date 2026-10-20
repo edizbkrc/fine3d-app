@@ -1,0 +1,87 @@
+{
+  "compilerOptions": {
+    "target": "es2017", // ✅ Modern target
+    "downlevelIteration": true,
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "strictNullChecks": true, // ✅ Null güvenliği
+    "noImplicitAny": true, // ✅ Tip güvenliği
+    "noImplicitReturns": true, // ✅ Return güvenliği
+    "noFallthroughCasesInSwitch": true, // ✅ Switch güvenliği
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "incremental": true,
+    // @types/minimatch, next-pwa üzerinden gelen boş bir stub; otomatik yüklenince tsc tek hatada
+    // durup gerçek hataları hiç göstermiyordu. Global tipler burada açıkça listelenir.
+    "types": ["node", "google.maps", "webxr"],
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      // @mui/material kendi içinde ayrı bir @types/react (19.1) taşıyor, kökteki 19.2 ile
+      // "aynı adlı ama ilgisiz tipler" hatası veriyordu (Chip icon, Provider children, Zoom ref).
+      "react": ["./node_modules/@types/react"],
+      "react/*": ["./node_modules/@types/react/*"],
+      "@layout/*": [
+        "./src/common/layout/*"
+      ],
+      "@opsTable/*": [
+        "./src/common/opsTable/*"
+      ],
+      "@common/*": [
+        "./src/common/*"
+      ],
+      "@components/*": [
+        "./src/components/*"
+      ],
+      "@enums/*": [
+        "./src/enums/*"
+      ],
+      "@features/*": [
+        "./src/features/*"
+      ],
+      "@forms/*": [
+        "./src/forms/*"
+      ],
+      "@helpers/*": [
+        "./src/helpers/*"
+      ],
+      "@hooks/*": [
+        "./src/hooks/*"
+      ],
+      "@network/*": [
+        "./src/network/*"
+      ],
+      "@redux/*": [
+        "./src/redux/*"
+      ],
+      "@/*": [
+        "./src/*"
+      ]
+    },
+    "module": "esnext"
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

@@ -1,0 +1,15 @@
+export enum QueryParamEnum {
+  EntityType = "entityType",
+  EntityId = "entityId",
+  SelectedUnitId = "selectedUnitId",
+  ProjectStageId = "projectStageId",
+  PolygonView = "polygonView",
+  ActiveTab = "activeTab",
+  FloorId = "floorId",
+  VirtualTourId = "virtualTourId",
+  VirtualTourOpen = "virtualTourOpen",
+  SceneId = "sceneId",
+  Token = "token",
+  Pv = "pv",
+  FrameIndex = "frameIndex",
+}

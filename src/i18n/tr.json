@@ -1,0 +1,509 @@
+{
+  "Meta": {
+    "Title": "Fine 3D App",
+    "Description": "Fine 3D uygulaması, kullanıcıların daireleri 3D olarak keşfetmelerine olanak tanır. Kullanıcılar, dairelerin detaylarını inceleyebilir, filtreleyebilir ve arama yapabilir."
+  },
+  "Common": {
+    "All": "Tümü",
+    "SeeMore": "Daha Fazla Gör",
+    "ReadMore": "Daha Fazla Oku",
+    "ViewDetails": "Detayları Gör",
+    "Submit": "Gönder",
+    "Close": "Kapat",
+    "Loading": "Yükleniyor...",
+    "SwitchToLightMode": "Açık",
+    "SwitchToDarkMode": "Kapalı",
+    "Error": "Hata",
+    "Success": "Başarılı",
+    "Warning": "Uyarı",
+    "Info": "Bilgi",
+    "GeneralView": "Genel Görünüm",
+    "Back": "Geri",
+    "Unit": "Daire",
+    "Units": "Daire",
+    "Card": "Kart",
+    "List": "Liste",
+    "Floor": "Kat",
+    "Room": "Oda",
+    "NoUnitsOnThisFloor": "Bu katta daire bulunmamaktadır",
+    "Net": "Net",
+    "Gross": "Brüt",
+    "Facade": "Cephe",
+    "NetArea": "Net m²",
+    "GrossArea": "Brüt m²",
+    "Available": "Müsait",
+    "Sold": "Satıldı",
+    "Reserved": "Rezerve",
+    "Unknown": "Bilinmiyor",
+    "Other": "Diğer",
+    "Center": "Merkez",
+    "North": "Kuzey",
+    "Northeast": "Kuzeydoğu",
+    "East": "Doğu",
+    "Southeast": "Güneydoğu",
+    "South": "Güney",
+    "Southwest": "Güneybatı",
+    "West": "Batı",
+    "Northwest": "Kuzeybatı",
+    "CompassN": "K",
+    "CompassE": "D",
+    "CompassS": "G",
+    "CompassW": "B",
+    "Filters": "Filtreler",
+    "RoomCount": "Oda Sayısı",
+    "FloorRange": "Kat Aralığı",
+    "AreaRange": "Alan Aralığı",
+    "Status": "Durum",
+    "Direction": "Yön",
+    "Clear": "Temizle",
+    "Apply": "Uygula",
+    "PolygonTooltipTitle": "İşaretlemeleri Keşfedin",
+    "PolygonTooltipMessage": "Bu ikona tıklayarak tüm kat ve daireleri 3D modelinizde görüntüleyebilirsiniz.",
+    "PolygonTooltipButton": "Anladım",
+    "Home": "Ana Sayfa",
+    "Menu": "Menü",
+    "Language": "Dil",
+    "Theme": "Tema",
+    "Reset": "Sıfırla",
+    "From": "Dan",
+    "To": "E",
+    "Min": "Min",
+    "Max": "Maks",
+    "UnitDetails": "Daire Detayları",
+    "BasicInfo": "Temel Bilgiler",
+    "AreaInfo": "Alan Bilgileri",
+    "LocationInfo": "Konum Bilgileri",
+    "Specifications": "Özellikler",
+    "Block": "Blok",
+    "Blocks": "Bloklar",
+    "Stage": "Aşama",
+    "ProjectStages": "Proje Aşamaları",
+    "StageView": "Etap Görünümü",
+    "UnitView": "Daire",
+    "FloorView": "Kat",
+    "StageCount": "{count} aşama mevcut",
+    "NoStagesFound": "Aşama Bulunamadı",
+    "NoStagesDescription": "Bu proje için şu anda herhangi bir aşama mevcut değildir.",
+    "FloorWithNumber": "{number}. Kat",
+    "UnitPlan": "Daire Planı",
+    "VirtualTour": "Sanal Tur",
+    "Dollhouse": "Dollhouse",
+    "NotFoundDollhouse": "Dollhouse Bulunamadı",
+    "ProjectLocation": "Proje Konumu",
+    "CurrentProject": "Mevcut Proje",
+    "FloorPlanView": "Kat Planı",
+    "FloorPlan": "Kat Planı",
+    "LoadingFloorPlan": "Kat Planı Yükleniyor...",
+    "BalconyView": "Balkon",
+    "Favorites": "Favoriler",
+    "AddToFavorites": "Favorilere Ekle",
+    "RemoveFromFavorites": "Favorilerden Çıkar",
+    "ShowFavorites": "Favorileri Göster",
+    "ShowAll": "Tümünü Göster",
+    "NoFavorites": "Henüz favori daire yok",
+    "FavoritesCount": "{count} Favori",
+    "CompareUnits": "Daire Karşılaştır",
+    "Compare": "Karşılaştır",
+    "ShareLink": "Linki Paylaş",
+    "LinkCopied": "Link panoya kopyalandı!",
+    "CopyFailed": "Link kopyalanamadı",
+    "ViewUnit": "Dairesini İnceleyin",
+    "ShareFailed": "Paylaşım başarısız oldu",
+    "Features": "Özellikler",
+    "NoFavoritesToCompare": "Karşılaştırılacak favori daire yok",
+    "AddUnitsToFavoritesToCompare": "Daireleri favorilere ekleyerek karşılaştırma yapabilirsiniz",
+    "ComparisonNote": "Favori dairelerinizi yan yana karşılaştırarak en uygun seçimi yapabilirsiniz",
+    "ShowDifferences": "Farkları Göster",
+    "Gallery": "Galeri",
+    "NoImagesFound": "Resim bulunamadı",
+    "NoImagesDescription": "Bu görünüm için kullanılabilir resim bulunmuyor",
+    "NoValidImagesFound": "Geçerli resim bulunamadı",
+    "NoValidImagesDescription": "Bu galerideki tüm resimlerin URL'leri geçersiz",
+    "Map": "Harita",
+    "NoMapDataFound": "Harita verisi bulunamadı",
+    "NoMapDataDescription": "Bu proje için harita verisi mevcut değil",
+    "MapMarkers": "Harita İşaretleri",
+    "Info Cards": "Bilgi Kartları",
+    "No Info Cards Found": "Bilgi Kartı Bulunamadı",
+    "No info cards available for this project": "Bu proje için bilgi kartı mevcut değil",
+    "No description available": "Açıklama mevcut değil",
+    "Refresh": "Yenile",
+    "LoadMore": "Daha Fazla Yükle",
+    "Retry": "Tekrar Dene",
+    "UnitType": "Daire Tipi",
+    "BlockInfo": "Blok Bilgileri",
+    "FloorInfo": "Kat Bilgileri",
+    "UnitInfo": "Daire Bilgileri",
+    "ProjectInfo": "Proje Bilgileri",
+    "ProjectStageInfo": "Proje Aşaması",
+    "DollhouseInfo": "Dollhouse Bilgileri",
+    "Information": "Bilgiler",
+    "Type": "Tip",
+    "Navigation": "Navigasyon",
+    "StartPoint": "Başlangıç Noktası",
+    "Destination": "Varış Noktası",
+    "SearchDestination": "Hedef ara...",
+    "UseMyLocation": "Konumumu Kullan",
+    "ClickMapToSelect": "Veya haritaya tıklayarak hedef seçin",
+    "GetDirections": "Yol Tarifi Al",
+    "RouteNotFound": "Rota bulunamadı",
+    "LocationAccessDenied": "Konum erişimi reddedildi",
+    "Driving": "Araba",
+    "Walking": "Yürüyüş",
+    "Cycling": "Bisiklet",
+    "Transit": "Toplu Taşıma",
+    "Duration": "Süre",
+    "Distance": "Mesafe",
+    "RouteDetails": "Rota Detayları",
+    "Value": "Değer",
+    "CurrentPhase": "Mevcut Faz",
+    "Completed": "Tamamlandı",
+    "NoActivePhase": "Aktif faz bulunamadı",
+    "NoWorkflowInfo": "İş akışı bilgisi mevcut değil",
+    "Workflow": "Süreç",
+    "Phase": "Faz",
+    "Progress": "İlerleme",
+    "Impact": "Etki",
+    "NoPhases": "Faz Bulunamadı",
+    "NoPhasesDescription": "Bu iş akışı için henüz faz tanımlanmamış",
+    "ProjectView": "Proje Görünümü",
+    "Name": "İsim",
+    "Description": "Açıklama",
+    "Image": "Resim",
+    "No Image": "Resim Yok",
+    "No items available": "Hiç öğe bulunmuyor",
+    "Click for details": "Detaylar için tıklayın",
+    "GetQuote": "Teklif Al",
+    "ContactForm": "İletişim Formu",
+    "NameSurname": "Ad Soyad",
+    "Email": "E-posta",
+    "PhoneNumber": "Telefon Numarası",
+    "Message": "Mesaj",
+    "Required": "Zorunlu",
+    "MinLength2": "En az 2 karakter gereklidir",
+    "MinLength13": "En az 13 karakter gereklidir",
+    "MaxLength100": "En fazla 100 karakter girilebilir",
+    "MaxLength254": "En fazla 254 karakter girilebilir",
+    "MaxLength500": "En fazla 500 karakter girilebilir",
+    "InvalidEmail": "Geçersiz e-posta formatı",
+    "Cancel": "İptal",
+    "Send": "Gönder",
+    "SelectedUnit": "Seçili Unit",
+    "FillRequiredFields": "Lütfen tüm zorunlu alanları doldurun.",
+    "FormSubmitError": "Form gönderilirken bir hata oluştu. Lütfen tekrar deneyin.",
+    "FormSubmitSuccess": "Talebiniz başarıyla gönderildi! En kısa sürede size dönüş yapacağız.",
+    "RequestDetailsPlaceholder": "Talebiniz hakkında detayları yazabilirsiniz...",
+    "Sending": "Gönderiliyor...",
+    "CaptchaRequired": "Lütfen captcha doğrulamasını tamamlayın",
+    "SelectVirtualTour": "Sanal Tur Seçin",
+    "VirtualTourNotAvailable": "Sanal Tur Mevcut Değil",
+    "BalconyViewNotAvailable": "Balkon Görünümü Mevcut Değil",
+    "NoBalconyImagesAvailable": "Balkon görselleri mevcut değil",
+    "BalconyPanorama": "Balkon Panoraması",
+    "BalconyImage": "Balkon Görseli",
+    "LoadingBalconyView": "Balkon Görünümü Yükleniyor...",
+    "BalconyViewError": "Balkon görünümü yüklenirken hata oluştu",
+    "ZoomIn": "Yakınlaştır",
+    "ZoomOut": "Uzaklaştır",
+    "Fullscreen": "Tam Ekran",
+    "ExitFullscreen": "Tam Ekrandan Çık",
+    "NextImage": "Sonraki Görsel",
+    "PreviousImage": "Önceki Görsel",
+    "VirtualTourScene": "Sanal Tur Sahnesi",
+    "LoadingSceneSelection": "Sahne Seçimi Yükleniyor...",
+    "IndoorArea": "Kapı İç Alanı",
+    "Price": "Fiyat",
+    "ClickToViewProjectVirtualTour": "Proje Sanal Turunu Görmek için tıklayın",
+    "Sell": "Satış",
+    "Facades": {
+      "0": "Yok",
+      "1": "Kuzey",
+      "2": "Güney",
+      "3": "Doğu",
+      "4": "Batı",
+      "5": "Kuzeydoğu",
+      "6": "Kuzeybatı",
+      "7": "Güneydoğu",
+      "8": "Güneybatı",
+      "9": "Hepsi"
+    }
+  },
+  "NotFound": {
+    "title": "Birşeyler Ters Gitti",
+    "message": "Aradığınız içerik yüklenemedi. Lütfen sayfayı yenileyin veya ana sayfaya dönün.",
+    "goHome": "Ana Sayfaya Dön",
+    "refresh": "Sayfayı Yenile",
+    "errorLoadingPresentation": "Sunum yüklenirken bir hata oluştu",
+    "presentationNotFound": "Sunum bulunamadı",
+    "tryAgain": "Tekrar Deneyin"
+  },
+  "Home": {
+    "Hero": {
+      "Title": "3D Görselleştirme ile Projenizi Hayata Geçirin",
+      "Subtitle": "Emlak projelerinizi gerçekçi 3D sahneler, sanal turlar ve interaktif poligonlarla sunun. Müşterilerinize unutulmaz bir deneyim yaşatın.",
+      "GetStarted": "Hemen Başlayın",
+      "WatchDemo": "Demo İzle",
+      "Stats": {
+        "Projects": "Aktif Proje",
+        "Users": "Mutlu Müşteri",
+        "Performance": "Performans Skoru"
+      },
+      "Features": {
+        "RealTime3D": "Gerçek Zamanlı 3D",
+        "VirtualTour": "360° Sanal Tur",
+        "EasyIntegration": "Kolay Entegrasyon"
+      }
+    },
+    "3DScene": {
+      "Title": "3D Sahne Görünümü",
+      "Subtitle": "En gelişmiş 3D görselleştirme teknolojisi ile projelerinizi gerçekçi bir şekilde sunun. Müşterileriniz projeyi sanki oradaymış gibi deneyimler.",
+      "SectionTitle": "Projenizi Her Açıdan Keşfedin",
+      "InteractiveBadge": "🎯 İnteraktif",
+      "RealTimeBadge": "⚡ Gerçek Zamanlı",
+      "TryDemoButton": "3D Demo'yu Deneyin",
+      "Features": {
+        "Rotation": "360° Rotasyon",
+        "RotationDesc": "Projenizi her açıdan inceleyebilirsiniz",
+        "Zoom": "Yakınlaştırma",
+        "ZoomDesc": "Detayları yakından görüntüleyin",
+        "FloorSelection": "Kat Seçimi",
+        "FloorSelectionDesc": "İstediğiniz kata anında geçiş yapın",
+        "DayNight": "Gün/Gece Modu",
+        "DayNightDesc": "Farklı ışık koşullarında görüntüleyin"
+      },
+      "Stats": {
+        "LiveDemo": "Canlı Demo",
+        "Interactive": "İnteraktif"
+      }
+    },
+    "Features": {
+      "Title": "Özelliklerimiz",
+      "Subtitle": "Modern teknolojilerle donatılmış kapsamlı görselleştirme araçları",
+      "Items": {
+        "3DScene": {
+          "Title": "3D Sahne Görünümü",
+          "Description": "Projeleri gerçekçi 3D ortamda keşfedin. Her açıdan detaylı görselleştirme ile mükemmel tasarım deneyimi."
+        },
+        "Dollhouse": {
+          "Title": "Dollhouse Görünümü",
+          "Description": "Yapıları kukla evi perspektifinde görüntüleyin. Kat planlarını ve iç mekanları aynı anda inceleyin."
+        },
+        "VirtualTour": {
+          "Title": "Sanal Tur",
+          "Description": "360° panoramik görüntülerle projenizde gezinin. Gerçek bir mülk ziyareti hissi yaşayın."
+        },
+        "Polygons": {
+          "Title": "İnteraktif Poligonlar",
+          "Description": "Tıklanabilir alanlarla her daire, oda ve özellik hakkında anında bilgi alın."
+        },
+        "Balcony": {
+          "Title": "Balkon & Manzara",
+          "Description": "Her dairenin balkon görüşünü ve manzarasını özel panoramalarla sergileyin."
+        },
+        "FloorPlan": {
+          "Title": "Kat Planları",
+          "Description": "İnteraktif 2D kat planları ile daire düzenlerini net bir şekilde gösterin."
+        },
+        "MediaGallery": {
+          "Title": "Medya Galerisi",
+          "Description": "Yüksek çözünürlüklü fotoğraflar, render görselleri ve proje medyalarını bir arada sergileyin."
+        },
+        "LocationMap": {
+          "Title": "Konum Haritası",
+          "Description": "İnteraktif harita entegrasyonu ile proje konumunu ve çevredeki önemli noktaları gösterin."
+        },
+        "CloudBased": {
+          "Title": "Bulut Tabanlı",
+          "Description": "Güvenli bulut altyapısında saklama ve her yerden erişim imkanı."
+        },
+        "MultiPlatform": {
+          "Title": "Çoklu Platform",
+          "Description": "Web, mobil ve tablet cihazlarda sorunsuz çalışan responsive tasarım."
+        },
+        "RealTimeRender": {
+          "Title": "Gerçek Zamanlı Render",
+          "Description": "Yüksek performanslı render motoru ile 60 FPS akıcı görselleştirme deneyimi."
+        },
+        "Customizable": {
+          "Title": "Özelleştirilebilir",
+          "Description": "Markanıza özel tema, logo ve renk seçenekleri ile kişiselleştirme."
+        }
+      }
+    },
+    "InteractiveFeatures": {
+      "Title": "İnteraktif Özellikler",
+      "Subtitle": "Gelişmiş özelliklerle kullanıcı deneyimini bir üst seviyeye taşıyın",
+      "RealTimeRender": {
+        "Title": "Gerçek Zamanlı Render",
+        "Description": "Yüksek performanslı 3D render teknolojisi ile anında yükleme ve akıcı gezinme deneyimi. 60 FPS sabit performans.",
+        "Tags": {
+          "FastLoading": "Hızlı Yükleme",
+          "SmoothTransitions": "Akıcı Geçişler",
+          "OptimizedRender": "Optimize Render"
+        }
+      },
+      "DetailedInfo": {
+        "Title": "Detaylı Proje Bilgileri",
+        "Description": "Her birim için kapsamlı bilgi kartları, galeri görselleri, kat planları ve video tanıtımları. Tüm detaylar bir arada.",
+        "Tags": {
+          "Gallery": "Görsel Galeri",
+          "FloorPlans": "Kat Planları",
+          "VideoTour": "Video Tanıtım"
+        }
+      },
+      "MultiLanguage": {
+        "Title": "Çoklu Dil Desteği",
+        "Description": "14 farklı dilde yerelleştirme desteği. Uluslararası müşterilerinize kendi dillerinde hizmet verin."
+      }
+    },
+    "AdvancedFeatures": {
+      "Title": "Gelişmiş Analiz Araçları",
+      "Subtitle": "Müşterilerinizin karar sürecini kolaylaştıran akıllı özellikler",
+      "LocationMap": {
+        "Title": "İnteraktif Konum Haritası",
+        "Description": "Projenizin konumunu interaktif harita üzerinde gösterin. Yakındaki önemli noktaları (ulaşım, alışveriş merkezleri, okullar, hastaneler) işaretleyin ve mesafeleri vurgulayın.",
+        "Points": {
+          "Transport": "Ulaşım Noktaları",
+          "TransportDesc": "Metro, otobüs durakları",
+          "Shopping": "Marketler",
+          "ShoppingDesc": "Alışveriş merkezleri",
+          "Education": "Eğitim",
+          "EducationDesc": "Okullar, üniversiteler",
+          "Health": "Sağlık",
+          "HealthDesc": "Hastaneler, klinikler"
+        }
+      },
+      "Comparison": {
+        "Title": "Akıllı Karşılaştırma",
+        "Description": "Farklı daire tiplerini, katları, blokları veya projeleri yan yana karşılaştırın. Müşterileriniz fiyat, özellikler ve avantajları kolayca görebilir.",
+        "Features": {
+          "UnitTypes": "Daire Tipleri",
+          "UnitTypesDesc": "1+1, 2+1, 3+1 karşılaştırma",
+          "PriceAnalysis": "Fiyat Analizi",
+          "PriceAnalysisDesc": "Detaylı fiyat karşılaştırması",
+          "Area": "Metrekare",
+          "AreaDesc": "Alan ve oda sayısı",
+          "Properties": "Özellikler",
+          "PropertiesDesc": "Tüm avantajlar bir arada"
+        }
+      }
+    },
+    "QuoteSection": {
+      "Badge": "Hızlı İletişim",
+      "Title": "Teklif Alın, Hemen Başlayın",
+      "Description": "Müşterileriniz ilgilendikleri daireler için anında teklif talep edebilir. Entegre form sistemi ile leads'lerinizi kaçırmayın.",
+      "Features": {
+        "Email": {
+          "Title": "E-posta Bildirimi",
+          "Desc": "Anında bildirim alın"
+        },
+        "SMS": {
+          "Title": "SMS Entegrasyonu",
+          "Desc": "Mobil bilgilendirme"
+        },
+        "AutoResponse": {
+          "Title": "Otomatik Yanıt",
+          "Desc": "Hızlı geri dönüş"
+        }
+      },
+      "FormTitle": "Teklif Alın",
+      "FormDescription": "Fine3D platformunu keşfetmek ve projeniz için nasıl kullanabileceğinizi görmek için bizimle iletişime geçin. Uzman ekibimiz size özel bir demo sunacak."
+    },
+    "PresentationModes": {
+      "Title": "Sunum Modları",
+      "Subtitle": "Projenizi farklı ışık koşullarında deneyimleyin",
+      "Day": {
+        "Title": "Gündüz Modu",
+        "Description": "Projenizi doğal gün ışığında görüntüleyin"
+      },
+      "Night": {
+        "Title": "Gece Modu",
+        "Description": "Yapay aydınlatma ile gece görünümünü keşfedin"
+      },
+      "Mixed": {
+        "Title": "Karma Mod",
+        "Description": "Gündüz ve gece modlarını karşılaştırın"
+      }
+    },
+    "Footer": {
+      "Description": "3D görselleştirme ve sanal tur teknolojileriyle emlak sektörüne yenilikçi çözümler sunuyoruz. Projelerinizi interaktif deneyimlerle hayata geçirin.",
+      "FollowUs": "BİZİ TAKİP EDİN",
+      "Products": {
+        "Title": "Ürünler",
+        "Items": [
+          "3D Sahne",
+          "Dollhouse",
+          "Sanal Tur",
+          "Medya Galerisi",
+          "Analiz Araçları",
+          "Raporlama"
+        ]
+      },
+      "Company": {
+        "Title": "Şirket",
+        "Items": ["Hakkımızda", "Blog", "Kariyer", "İletişim", "Destek", "SSS"]
+      },
+      "Contact": {
+        "Title": "İletişim",
+        "Email": "E-posta",
+        "Phone": "Telefon",
+        "Address": "Adres",
+        "EmailValue": "info@fine3d.com",
+        "PhoneValue": "+90 (XXX) XXX XX XX",
+        "AddressValue": "İstanbul, Türkiye"
+      },
+      "Copyright": "© {year} Fine3D. Tüm hakları saklıdır.",
+      "Legal": ["Gizlilik Politikası", "Kullanım Şartları", "Çerezler"]
+    }
+  },
+  "Tour": {
+    "StartTour": "Rehberli Turu Başlat",
+    "Welcome": "Hoş Geldiniz",
+    "WelcomeMessage": "🎉 Fine3D uygulamasına hoş geldiniz! Bu rehberli tur ile uygulamanın tüm özelliklerini öğrenebilirsiniz. Başlayalım!",
+    "MainSceneTitle": "🏠 Ana Sahne Alanı",
+    "MainSceneDescription": "Bu ana sahne alanıdır. Burada projenizin 360° görünümünü inceleyebilirsiniz. Fare ile sürükleyerek sahnede gezinebilir, projenin farklı açılarını keşfedebilirsiniz.",
+    "UnitDrawerTitle": "🏢 Daire Paneli",
+    "UnitDrawerDescription": "Bu daire paneli bölümüdür. Burada projedeki tüm mevcut daireleri görüntüleyebilir, detaylarına erişebilir ve beğendiğiniz daireleri seçebilirsiniz.",
+    "UnitDrawerFiltersTitle": "🔍 Daire Filtreleri",
+    "UnitDrawerFiltersDescription": "Bu daire filtreleridir. Oda sayısı, kat aralığı, alan büyüklüğü, durum ve yön kriterlerine göre daireleri filtreleyerek ihtiyaçlarınıza uygun daireleri bulabilirsiniz.",
+    "StageDrawerTitle": "🏗️ Proje Etapları Paneli",
+    "StageDrawerDescription": "Bu proje etapları panelidir. Burada projenin tüm inşaat etaplarını görüntüleyebilirsiniz. Her etap, blok ve daire sayılarını gösterir. Herhangi bir etapa tıklayarak o inşaat fazını keşfedebilirsiniz.",
+    "StageDrawerItemsTitle": "📋 Etap Seçimi Kartları",
+    "StageDrawerItemsDescription": "Bunlar etap seçim kartlarıdır. Her kart, o fazdaki blok ve daireler hakkında detaylı bilgiler içeren farklı bir inşaat etabını temsil eder.",
+    "SidebarMenuTitle": "📋 Sağ Yan Menü",
+    "SidebarMenuDescription": "Bu sağ yan menü çubuğudur. Buradan farklı görünüm modları, galeri, harita ve bilgi kartlarına erişebilirsiniz.",
+    "DrawerToggleTitle": "📄 Detay Paneli Butonu",
+    "DrawerToggleDescription": "Sağ panel açma/kapama butonudur. Bu panelde seçilen alan hakkında detaylı bilgileri görebilirsiniz.",
+    "HomeButtonTitle": "🏠 Ana Sayfa Butonu",
+    "HomeButtonDescription": "Ana görünüm butonudur. Her zaman ana sahneye dönmek için kullanabilirsiniz.",
+    "GalleryButtonTitle": "📸 Galeri Butonu",
+    "GalleryButtonDescription": "Galeri butonudur. Projeye ait fotoğrafları ve görselleri görüntülemek için tıklayın.",
+    "InfoButtonTitle": "ℹ️ Bilgi Kartları Butonu",
+    "InfoButtonDescription": "Bilgi kartları butonudur. Proje hakkında detaylı bilgileri görmek için kullanın.",
+    "MapButtonTitle": "🗺️ Harita Butonu",
+    "MapButtonDescription": "Harita butonudur. Projenin konum bilgilerini harita üzerinde görüntüler.",
+    "LanguageButtonTitle": "🌐 Dil Seçimi Butonu",
+    "LanguageButtonDescription": "Dil değiştirme butonudur. Türkçe ve İngilizce arasında geçiş yapabilirsiniz.",
+    "ViewerToolbarTitle": "🔧 Üst Araç Çubuğu",
+    "ViewerToolbarDescription": "Üst araç çubuğudur. Burada logo, gece/gündüz modu, poligon görünürlüğü, pusula ve iletişim butonları yer alır.",
+    "NavigationControlsTitle": "🧭 Navigasyon Kontrolleri",
+    "NavigationControlsDescription": "Navigasyon kontrolleridir. Sol ve sağ oklar ile sahnenin farklı açılarına hızlıca geçiş yapabilirsiniz.",
+    "NavigationLeftTitle": "⬅️ Sol Ok Butonu",
+    "NavigationLeftDescription": "Bu sol navigasyon butonudur. Bu oka tıklayarak önceki görünüm açısına geçebilir ve sahneyi farklı perspektiflerden keşfedebilirsiniz.",
+    "NavigationRightTitle": "➡️ Sağ Ok Butonu",
+    "NavigationRightDescription": "Bu sağ navigasyon butonudur. Bu oka tıklayarak sonraki görünüm açısına geçebilir ve sahneyi yeni perspektiflerden keşfetmeye devam edebilirsiniz.",
+    "SceneUsageTitle": "🎯 Sahne Nasıl Kullanılır?",
+    "SceneUsageDescription": "Şimdi sahneyi kullanmayı öğrenelim! 🖱️ Fare ile sürükleyerek 360° döndürebilirsiniz. 🎯 Renkli alanlar (poligonlar) tıklanabilir detay alanlarıdır - bunlara tıklayarak o alan hakkında bilgi alabilirsiniz.",
+    "TourCompletedTitle": "✅ Tour Tamamlandı",
+    "TourCompletedDescription": "🎉 Tebrikler! Artık Fine3D uygulamasını nasıl kullanacağınızı biliyorsunuz. İsterseniz sağ alt köşedeki yardım butonuna tıklayarak bu turu tekrar başlatabilirsiniz. İyi keşifler! ✨",
+    "Back": "Geri",
+    "Close": "Kapat",
+    "Last": "Bitir",
+    "Next": "İleri",
+    "NextWithProgress": "İleri ({step} / {steps})",
+    "Open": "Açık",
+    "Skip": "Geç",
+    "FixedMode": "Sabit Mod",
+    "ScrollableMode": "Kaydırılabilir Mod"
+  }
+}

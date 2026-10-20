@@ -1,0 +1,510 @@
+{
+  "Meta": {
+    "Title": "Fine 3D App",
+    "Description": "Fine 3D App"
+  },
+  "Common": {
+    "All": "All",
+    "SeeMore": "See More",
+    "ReadMore": "Read More",
+    "ViewDetails": "View Details",
+    "Submit": "Submit",
+    "Close": "Close",
+    "Loading": "Loading...",
+    "SwitchToLightMode": "Light",
+    "SwitchToDarkMode": "Dark",
+    "Error": "Error",
+    "Success": "Success",
+    "Warning": "Warning",
+    "Info": "Info",
+    "GeneralView": "General View",
+    "Back": "Back",
+    "Unit": "Unit",
+    "Units": "Units",
+    "Card": "Card",
+    "List": "List",
+    "Floor": "Floor",
+    "Room": "Room",
+    "NoUnitsOnThisFloor": "No units on this floor",
+    "Net": "Net",
+    "Gross": "Gross",
+    "Facade": "Facade",
+    "NetArea": "Net m²",
+    "GrossArea": "Gross m²",
+    "Available": "Available",
+    "Sold": "Sold",
+    "Reserved": "Reserved",
+    "Unknown": "Unknown",
+    "Other": "Other",
+    "Center": "Center",
+    "North": "North",
+    "Northeast": "Northeast",
+    "East": "East",
+    "Southeast": "Southeast",
+    "South": "South",
+    "Southwest": "Southwest",
+    "West": "West",
+    "Northwest": "Northwest",
+    "CompassN": "N",
+    "CompassE": "E",
+    "CompassS": "S",
+    "CompassW": "W",
+    "Filters": "Filters",
+    "RoomCount": "Room Count",
+    "FloorRange": "Floor Range",
+    "AreaRange": "Area Range",
+    "Status": "Status",
+    "Direction": "Direction",
+    "Clear": "Clear",
+    "Apply": "Apply",
+    "PolygonTooltipTitle": "Discover Markings",
+    "PolygonTooltipMessage": "Click this icon to view all floors and units on your 3D model.",
+    "PolygonTooltipButton": "Got it",
+    "Home": "Home",
+    "Menu": "Menu",
+    "Language": "Language",
+    "Theme": "Theme",
+    "Reset": "Reset",
+    "From": "From",
+    "To": "To",
+    "Min": "Min",
+    "Max": "Max",
+    "UnitDetails": "Unit Details",
+    "BasicInfo": "Basic Information",
+    "AreaInfo": "Area Information",
+    "LocationInfo": "Location Information",
+    "Specifications": "Specifications",
+    "Block": "Block",
+    "Blocks": "Blocks",
+    "Stage": "Stage",
+    "ProjectStages": "Project Stages",
+    "StageView": "Stage View",
+    "UnitView": "Unit",
+    "FloorView": "Floor",
+    "StageCount": "{count} stages available",
+    "NoStagesFound": "No Stages Found",
+    "NoStagesDescription": "There are currently no stages available for this project.",
+    "UnitPlan": "Unit Plan",
+    "VirtualTour": "Virtual Tour",
+    "NotFoundDollhouse": "Dollhouse Not Found",
+    "Dollhouse": "Dollhouse",
+    "ProjectLocation": "Project Location",
+    "CurrentProject": "Current Project",
+    "FloorPlanView": "Floor Plan",
+    "FloorPlan": "Floor Plan",
+    "LoadingFloorPlan": "Loading Floor Plan...",
+    "BalconyView": "Balcony",
+    "Favorites": "Favorites",
+    "AddToFavorites": "Add to Favorites",
+    "RemoveFromFavorites": "Remove from Favorites",
+    "ShowFavorites": "Show Favorites",
+    "ShowAll": "Show All",
+    "NoFavorites": "No favorite units yet",
+    "FavoritesCount": "{count} Favorites",
+    "CompareUnits": "Compare Units",
+    "Compare": "Compare",
+    "ShareLink": "Share Link",
+    "LinkCopied": "Link copied to clipboard!",
+    "CopyFailed": "Failed to copy link",
+    "ViewUnit": "View This Unit",
+    "ShareFailed": "Share failed",
+    "Features": "Features",
+    "NoFavoritesToCompare": "No favorites to compare",
+    "AddUnitsToFavoritesToCompare": "Add units to favorites to start comparing",
+    "ComparisonNote": "Compare your favorite units side by side to make the best choice",
+    "ShowDifferences": "Show Differences",
+    "Gallery": "Gallery",
+    "NoImagesFound": "No images found",
+    "NoImagesDescription": "There are no images available for this view",
+    "NoValidImagesFound": "No valid images found",
+    "NoValidImagesDescription": "All images in this gallery have invalid URLs",
+    "Map": "Map",
+    "NoMapDataFound": "No map data found",
+    "NoMapDataDescription": "Map data is not available for this project",
+    "MapMarkers": "Map Markers",
+    "Info Cards": "Info Cards",
+    "No Info Cards Found": "No Info Cards Found",
+    "No info cards available for this project": "No info cards available for this project",
+    "No description available": "No description available",
+    "Refresh": "Refresh",
+    "LoadMore": "Load More",
+    "Retry": "Retry",
+    "UnitType": "Unit Type",
+    "BlockInfo": "Block Information",
+    "FloorInfo": "Floor Information",
+    "UnitInfo": "Unit Information",
+    "ProjectInfo": "Project Information",
+    "Name": "Name",
+    "Description": "Description",
+    "Image": "Image",
+    "No Image": "No Image",
+    "No items available": "No items available",
+    "Click for details": "Click for details",
+    "ProjectStageInfo": "Project Stage Information",
+    "DollhouseInfo": "Dollhouse Information",
+    "Information": "Information",
+    "Type": "Type",
+    "Navigation": "Navigation",
+    "StartPoint": "Starting Point",
+    "Destination": "Destination",
+    "SearchDestination": "Search for a destination...",
+    "UseMyLocation": "Use My Location",
+    "ClickMapToSelect": "Or click on the map to select a destination",
+    "GetDirections": "Get Directions",
+    "RouteNotFound": "Route could not be found",
+    "LocationAccessDenied": "Location access denied",
+    "Driving": "Drive",
+    "Walking": "Walk",
+    "Cycling": "Bike",
+    "Transit": "Transit",
+    "Duration": "Duration",
+    "Distance": "Distance",
+    "RouteDetails": "Route Details",
+    "Value": "Value",
+    "CurrentPhase": "Current Phase",
+    "Completed": "Completed",
+    "NoActivePhase": "No active phase found",
+    "NoWorkflowInfo": "No workflow information available",
+    "Workflow": "Workflow",
+    "Phase": "Phase",
+    "Progress": "Progress",
+    "Impact": "Impact",
+    "NoPhases": "No Phases Found",
+    "NoPhasesDescription": "No phases have been defined for this workflow yet",
+    "ProjectView": "Project View",
+    "GetQuote": "Get Quote",
+    "ContactForm": "Contact Form",
+    "NameSurname": "Name Surname",
+    "Email": "Email",
+    "PhoneNumber": "Phone Number",
+    "Message": "Message",
+    "Required": "Required",
+    "MinLength2": "Minimum 2 characters required",
+    "MinLength13": "Minimum 13 characters required",
+    "MaxLength100": "Maximum 100 characters allowed",
+    "MaxLength254": "Maximum 254 characters allowed",
+    "MaxLength500": "Maximum 500 characters allowed",
+    "InvalidEmail": "Invalid email format",
+    "Cancel": "Cancel",
+    "Send": "Send",
+    "SelectedUnit": "Selected Unit",
+    "FillRequiredFields": "Please fill in all required fields.",
+    "FormSubmitError": "An error occurred while submitting the form. Please try again.",
+    "FormSubmitSuccess": "Your request has been successfully submitted! We will get back to you as soon as possible.",
+    "RequestDetailsPlaceholder": "You can write details about your request...",
+    "Sending": "Sending...",
+    "CaptchaRequired": "Please complete the captcha verification",
+    "SelectVirtualTour": "Select Virtual Tour",
+    "VirtualTourNotAvailable": "Virtual Tour Not Available",
+    "BalconyViewNotAvailable": "Balcony View Not Available",
+    "NoBalconyImagesAvailable": "No balcony images available",
+    "BalconyPanorama": "Balcony Panorama",
+    "BalconyImage": "Balcony Image",
+    "LoadingBalconyView": "Loading Balcony View...",
+    "BalconyViewError": "Error loading balcony view",
+    "ZoomIn": "Zoom In",
+    "ZoomOut": "Zoom Out",
+    "Fullscreen": "Fullscreen",
+    "ExitFullscreen": "Exit Fullscreen",
+    "NextImage": "Next Image",
+    "PreviousImage": "Previous Image",
+    "VirtualTourScene": "Virtual Tour Scene",
+    "LoadingSceneSelection": "Loading Scene Selection...",
+    "IndoorArea": "Indoor Area (m²)",
+    "Price": "Price",
+    "ClickToViewProjectVirtualTour": "Click to view project virtual tour",
+    "Sell": "Sell",
+    "Facades": {
+      "0": "None",
+      "1": "North",
+      "2": "South",
+      "3": "East",
+      "4": "West",
+      "5": "NorthEast",
+      "6": "NorthWest",
+      "7": "SouthEast",
+      "8": "SouthWest",
+      "9": "All"
+    }
+  },
+  "NotFound": {
+    "title": "Something Went Wrong",
+    "message": "The content you are looking for could not be loaded. Please refresh the page or return to the home page.",
+    "goHome": "Go to Home",
+    "refresh": "Refresh Page",
+    "errorLoadingPresentation": "An error occurred while loading the presentation",
+    "presentationNotFound": "Presentation not found",
+    "tryAgain": "Try Again"
+  },
+  "Home": {
+    "Hero": {
+      "Title": "Bring Your Project to Life with 3D Visualization",
+      "Subtitle": "Present your real estate projects with realistic 3D scenes, virtual tours and interactive polygons. Give your customers an unforgettable experience.",
+      "GetStarted": "Get Started",
+      "WatchDemo": "Watch Demo",
+      "Stats": {
+        "Projects": "Active Projects",
+        "Users": "Happy Customers",
+        "Performance": "Performance Score"
+      },
+      "Features": {
+        "RealTime3D": "Real-Time 3D",
+        "VirtualTour": "360° Virtual Tour",
+        "EasyIntegration": "Easy Integration"
+      }
+    },
+    "3DScene": {
+      "Title": "3D Scene View",
+      "Subtitle": "Present your projects realistically with the most advanced 3D visualization technology. Your customers experience the project as if they were there.",
+      "SectionTitle": "Explore Your Project from Every Angle",
+      "InteractiveBadge": "🎯 Interactive",
+      "RealTimeBadge": "⚡ Real-Time",
+      "TryDemoButton": "Try 3D Demo",
+      "Features": {
+        "Rotation": "360° Rotation",
+        "RotationDesc": "Examine your project from every angle",
+        "Zoom": "Zoom",
+        "ZoomDesc": "View details up close",
+        "FloorSelection": "Floor Selection",
+        "FloorSelectionDesc": "Instantly switch to any floor",
+        "DayNight": "Day/Night Mode",
+        "DayNightDesc": "View in different lighting conditions"
+      },
+      "Stats": {
+        "LiveDemo": "Live Demo",
+        "Interactive": "Interactive"
+      }
+    },
+    "Features": {
+      "Title": "Our Features",
+      "Subtitle": "Comprehensive visualization tools equipped with modern technologies",
+      "Items": {
+        "3DScene": {
+          "Title": "3D Scene View",
+          "Description": "Explore projects in a realistic 3D environment. Perfect design experience with detailed visualization from every angle."
+        },
+        "Dollhouse": {
+          "Title": "Dollhouse View",
+          "Description": "View structures from a dollhouse perspective. Examine floor plans and interiors simultaneously."
+        },
+        "VirtualTour": {
+          "Title": "Virtual Tour",
+          "Description": "Navigate through your project with 360° panoramic views. Experience the feeling of a real property visit."
+        },
+        "Polygons": {
+          "Title": "Interactive Polygons",
+          "Description": "Get instant information about every unit, room and feature with clickable areas."
+        },
+        "Balcony": {
+          "Title": "Balcony & View",
+          "Description": "Showcase each unit's balcony view and scenery with special panoramas."
+        },
+        "FloorPlan": {
+          "Title": "Floor Plans",
+          "Description": "Clearly display unit layouts with interactive 2D floor plans."
+        },
+        "MediaGallery": {
+          "Title": "Media Gallery",
+          "Description": "Display high-resolution photos, rendered images and project media together."
+        },
+        "LocationMap": {
+          "Title": "Location Map",
+          "Description": "Show project location and nearby points of interest with interactive map integration."
+        },
+        "CloudBased": {
+          "Title": "Cloud Based",
+          "Description": "Secure cloud storage and access from anywhere."
+        },
+        "MultiPlatform": {
+          "Title": "Multi-Platform",
+          "Description": "Responsive design that works seamlessly on web, mobile and tablet devices."
+        },
+        "RealTimeRender": {
+          "Title": "Real-Time Render",
+          "Description": "Smooth 60 FPS visualization experience with high-performance rendering engine."
+        },
+        "Customizable": {
+          "Title": "Customizable",
+          "Description": "Personalize with brand-specific theme, logo and color options."
+        }
+      }
+    },
+    "InteractiveFeatures": {
+      "Title": "Interactive Features",
+      "Subtitle": "Take user experience to the next level with advanced features",
+      "RealTimeRender": {
+        "Title": "Real-Time Render",
+        "Description": "Instant loading and smooth navigation experience with high-performance 3D rendering technology. Stable 60 FPS performance.",
+        "Tags": {
+          "FastLoading": "Fast Loading",
+          "SmoothTransitions": "Smooth Transitions",
+          "OptimizedRender": "Optimized Render"
+        }
+      },
+      "DetailedInfo": {
+        "Title": "Detailed Project Information",
+        "Description": "Comprehensive info cards, gallery images, floor plans and video presentations for each unit. All details in one place.",
+        "Tags": {
+          "Gallery": "Image Gallery",
+          "FloorPlans": "Floor Plans",
+          "VideoTour": "Video Tour"
+        }
+      },
+      "MultiLanguage": {
+        "Title": "Multi-Language Support",
+        "Description": "Localization support in 14 different languages. Serve your international customers in their own language."
+      }
+    },
+    "AdvancedFeatures": {
+      "Title": "Advanced Analysis Tools",
+      "Subtitle": "Smart features that facilitate your customers' decision-making process",
+      "LocationMap": {
+        "Title": "Interactive Location Map",
+        "Description": "Display your project's location on an interactive map. Mark nearby points of interest (transportation, shopping centers, schools, hospitals) and highlight distances.",
+        "Points": {
+          "Transport": "Transportation Points",
+          "TransportDesc": "Metro, bus stops",
+          "Shopping": "Shopping",
+          "ShoppingDesc": "Shopping centers",
+          "Education": "Education",
+          "EducationDesc": "Schools, universities",
+          "Health": "Healthcare",
+          "HealthDesc": "Hospitals, clinics"
+        }
+      },
+      "Comparison": {
+        "Title": "Smart Comparison",
+        "Description": "Compare different unit types, floors, blocks or projects side by side. Your customers can easily see prices, features and advantages.",
+        "Features": {
+          "UnitTypes": "Unit Types",
+          "UnitTypesDesc": "1+1, 2+1, 3+1 comparison",
+          "PriceAnalysis": "Price Analysis",
+          "PriceAnalysisDesc": "Detailed price comparison",
+          "Area": "Square Meter",
+          "AreaDesc": "Area and room count",
+          "Properties": "Features",
+          "PropertiesDesc": "All advantages together"
+        }
+      }
+    },
+    "QuoteSection": {
+      "Badge": "Quick Contact",
+      "Title": "Get a Quote, Start Now",
+      "Description": "Your customers can instantly request quotes for units they're interested in. Don't miss your leads with integrated form system.",
+      "Features": {
+        "Email": {
+          "Title": "Email Notification",
+          "Desc": "Get instant notifications"
+        },
+        "SMS": {
+          "Title": "SMS Integration",
+          "Desc": "Mobile notifications"
+        },
+        "AutoResponse": {
+          "Title": "Auto Reply",
+          "Desc": "Quick response"
+        }
+      },
+      "FormTitle": "Get a Quote",
+      "FormDescription": "Contact us to discover the Fine3D platform and see how you can use it for your project. Our expert team will provide you with a personalized demo."
+    },
+    "PresentationModes": {
+      "Title": "Presentation Modes",
+      "Subtitle": "Experience your project in different lighting conditions",
+      "Day": {
+        "Title": "Day Mode",
+        "Description": "View your project in natural daylight"
+      },
+      "Night": {
+        "Title": "Night Mode",
+        "Description": "Explore the night view with artificial lighting"
+      },
+      "Mixed": {
+        "Title": "Mixed Mode",
+        "Description": "Compare day and night modes"
+      }
+    },
+    "Footer": {
+      "Description": "We provide innovative solutions to the real estate sector with 3D visualization and virtual tour technologies. Bring your projects to life with interactive experiences.",
+      "FollowUs": "FOLLOW US",
+      "Products": {
+        "Title": "Products",
+        "Items": [
+          "3D Scene",
+          "Dollhouse",
+          "Virtual Tour",
+          "Media Gallery",
+          "Analysis Tools",
+          "Reporting"
+        ]
+      },
+      "Company": {
+        "Title": "Company",
+        "Items": ["About Us", "Blog", "Careers", "Contact", "Support", "FAQ"]
+      },
+      "Contact": {
+        "Title": "Contact",
+        "Email": "Email",
+        "Phone": "Phone",
+        "Address": "Address",
+        "EmailValue": "info@fine3d.com",
+        "PhoneValue": "+90 (XXX) XXX XX XX",
+        "AddressValue": "Istanbul, Turkey"
+      },
+      "Copyright": "© {year} Fine3D. All rights reserved.",
+      "Legal": ["Privacy Policy", "Terms of Use", "Cookies"]
+    }
+  },
+  "Tour": {
+    "StartTour": "Start Guided Tour",
+    "Welcome": "Welcome",
+    "WelcomeMessage": "🎉 Welcome to Fine3D application! With this guided tour, you can learn all the features of the application. Let's get started!",
+    "MainSceneTitle": "🏠 Main Scene Area",
+    "MainSceneDescription": "This is the main scene area. Here you can explore the 360° view of your project. You can navigate through the scene by dragging with the mouse and discover different angles of the project.",
+    "UnitDrawerTitle": "🏢 Unit Drawer Panel",
+    "UnitDrawerDescription": "This is the unit drawer panel. Here you can view all available units in the project, access their details, and select your preferred units.",
+    "UnitDrawerFiltersTitle": "🔍 Unit Filters",
+    "UnitDrawerFiltersDescription": "These are the unit filters. You can filter units by room count, floor range, area size, status and direction to find units that meet your needs.",
+    "StageDrawerTitle": "🏗️ Project Stages Panel",
+    "StageDrawerDescription": "This is the project stages panel. Here you can view all construction stages of the project. Each stage shows block and unit counts. Click on any stage to explore that specific construction phase.",
+    "StageDrawerItemsTitle": "📋 Stage Selection Cards",
+    "StageDrawerItemsDescription": "These are the stage selection cards. Each card represents a different construction stage with detailed information about blocks and units in that phase.",
+    "SidebarMenuTitle": "📋 Right Sidebar Menu",
+    "SidebarMenuDescription": "This is the right sidebar menu. From here you can access different view modes, gallery, map and info cards.",
+    "DrawerToggleTitle": "📄 Detail Panel Button",
+    "DrawerToggleDescription": "This is the right panel open/close button. In this panel you can see detailed information about the selected area.",
+    "HomeButtonTitle": "🏠 Home Button",
+    "HomeButtonDescription": "This is the home view button. You can always use it to return to the main scene.",
+    "GalleryButtonTitle": "📸 Gallery Button",
+    "GalleryButtonDescription": "This is the gallery button. Click to view photos and images related to the project.",
+    "InfoButtonTitle": "ℹ️ Info Cards Button",
+    "InfoButtonDescription": "This is the info cards button. Use it to see detailed information about the project.",
+    "MapButtonTitle": "🗺️ Map Button",
+    "MapButtonDescription": "This is the map button. It displays the project's location information on the map.",
+    "LanguageButtonTitle": "🌐 Language Selection Button",
+    "LanguageButtonDescription": "This is the language change button. You can switch between Turkish and English.",
+    "ViewerToolbarTitle": "🔧 Top Toolbar",
+    "ViewerToolbarDescription": "This is the top toolbar. Here you'll find the logo, day/night mode, polygon visibility, compass and contact buttons.",
+    "NavigationControlsTitle": "🧭 Navigation Controls",
+    "NavigationControlsDescription": "These are the navigation controls. You can quickly switch to different angles of the scene with the left and right arrows.",
+    "NavigationLeftTitle": "⬅️ Left Arrow Button",
+    "NavigationLeftDescription": "This is the left navigation button. Click this arrow to go to the previous view angle and explore the scene from different perspectives.",
+    "NavigationRightTitle": "➡️ Right Arrow Button",
+    "NavigationRightDescription": "This is the right navigation button. Click this arrow to go to the next view angle and continue exploring the scene from new perspectives.",
+    "NavigationArrowsTitle": "↔️ Left & Right Arrow Buttons",
+    "NavigationArrowsDescription": "These are the navigation arrow buttons. The left arrow takes you to the previous view angle, and the right arrow takes you to the next view angle. Use these to quickly explore different perspectives of the scene.",
+    "SceneUsageTitle": "🎯 How to Use the Scene?",
+    "SceneUsageDescription": "Now let's learn how to use the scene! 🖱️ You can rotate 360° by dragging with the mouse. 🎯 Colored areas (polygons) are clickable detail areas - you can click on them to get information about that area.",
+    "TourCompletedTitle": "✅ Tour Completed",
+    "TourCompletedDescription": "🎉 Congratulations! Now you know how to use the Fine3D application. If you want, you can restart this tour by clicking the help button in the bottom right corner. Happy exploring! ✨",
+    "Back": "Back",
+    "Close": "Close",
+    "Last": "Finish",
+    "Next": "Next",
+    "NextWithProgress": "Next ({step} / {steps})",
+    "Open": "Open",
+    "Skip": "Skip",
+    "FixedMode": "Fixed Mode",
+    "ScrollableMode": "Scrollable Mode"
+  }
+}

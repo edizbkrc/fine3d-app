@@ -1,0 +1,64 @@
+import { ThemeOptionsEnum } from "@enums/ThemeOptionsEnum";
+import { EntityTypeEnum } from "@enums/EntityTypeEnum";
+import { PresentationTypeEnum } from "@enums/PresentationTypeEnum";
+import { ILanguageDto } from "@/types/ILanguageDto";
+import { IPresentationInitResponse } from "@/types/IPresentationInitResponse";
+import { IPresentationResponse } from "@/types/IPresentationResponse";
+import { FavoriteUnit } from "@/helpers/Common/favoritesService";
+import { IGalleryItem } from "@/types/IGalleryItem";
+import { IMapData } from "@/types/IMapData";
+import { IInfoCard } from "@/types/IInfoCard";
+
+export interface IAppReducer {
+  theme: ThemeOptionsEnum;
+  opsModalVisible: boolean;
+  opsModalData?: any;
+  generalLoading: boolean;
+  languageLoading: boolean;
+  languages: ILanguageDto[];
+  drawerOpen: boolean;
+  errorMessages: {
+    tr: string;
+    en: string;
+  };
+  connectionErrorMessages: {
+    tr: string;
+    en: string;
+  };
+  presentationInitResponse: IPresentationInitResponse | null;
+  presentationResponse: IPresentationResponse | null;
+  tabBarContentResponse: any | null;
+  presentationContentResponse: any | null;
+  currentEntityType: EntityTypeEnum | null;
+  currentEntityId: string | null;
+  selectedUnitId: number | null;
+  selectedFloorId: number | null;
+  unitDetailDrawerOpen: boolean;
+  unitDetailDrawerWasOpen: boolean;
+  unitFullDetailDrawerOpen: boolean;
+  currentPresentationType: PresentationTypeEnum | null;
+  polygonsVisible: boolean;
+  favorites: FavoriteUnit[];
+  isComparisonDrawerOpen: boolean;
+  galleryDrawerOpen: boolean;
+  galleryItems: IGalleryItem[];
+  galleryLoading: boolean;
+  mapDrawerOpen: boolean;
+  mapData: IMapData | null;
+  mapLoading: boolean;
+  infoCards: IInfoCard[];
+  infoCardDrawerOpen: boolean;
+  currentSceneId: string | null;
+  virtualTourDrawerOpen: boolean;
+  tourActive: boolean;
+  hasSellMode: boolean;
+  floorContent: any | null;
+  activeTab: string | null;
+  polygonView: "unit" | "floor";
+  virtualTourId: string | null;
+  projectBlockContent: any[] | null;
+  workflowDrawerOpen: boolean;
+  projectContent: any[] | null;
+  projectWorkflowDrawerOpen: boolean;
+  currentFrameIndex: number | null;
+}
