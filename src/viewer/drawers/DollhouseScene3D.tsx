@@ -15,6 +15,7 @@ import { IPolygonModel } from "@/types/IPolygonModel";
 import { ShapeTypeEnum } from "@/enums/ShapeTypeEnum";
 import NavigationControls from "../layout/NavigationControls";
 import { resolveCdnImageUrl } from "@helpers/Common/cdnImageUrl";
+import { preloadFramesInBackground } from "@helpers/Common/backgroundFramePreload";
 
 interface DollhouseScene3DProps {
   dollhouseData: ITagItem[];
@@ -489,14 +490,18 @@ export default function DollhouseScene3D({
 
     animate();
 
-    const preloadAllFrames = async () => {
-      const promises: Promise<void>[] = [];
-
-      for (let i = 0; i < totalFrames; i++) {
-        const url = getImageUrl(i);
-        if (!textureCacheRef.current.has(i) && url) {
-          const p = new Promise<void>((resolve) => {
-            const tex = textureLoader.load(url, () => {
+    // Bütün kareler arka planda, sınırlı eşzamanlılıkla ve yakından uzağa (bkz. backgroundFramePreload).
+    const cancelBackgroundPreload = preloadFramesInBackground({
+      total: totalFrames,
+      startIndex: currentFrameRef.current,
+      shouldSkip: (i) => textureCacheRef.current.has(i) || !getImageUrl(i),
+      load: (i) =>
+        new Promise<void>((resolve) => {
+          const url = getImageUrl(i);
+          if (!url) return resolve();
+          const tex = textureLoader.load(
+            url,
+            () => {
               tex.colorSpace = THREE.SRGBColorSpace;
               tex.minFilter = THREE.LinearFilter;
               tex.magFilter = THREE.LinearFilter;
@@ -505,16 +510,12 @@ export default function DollhouseScene3D({
               tex.wrapT = THREE.ClampToEdgeWrapping;
               textureCacheRef.current.set(i, tex);
               resolve();
-            });
-          });
-          promises.push(p);
-        }
-      }
-
-      await Promise.all(promises);
-    };
-
-    preloadAllFrames();
+            },
+            undefined,
+            () => resolve(),
+          );
+        }),
+    });
 
     let isDragging = false;
     let dragStarted = false;
@@ -621,6 +622,7 @@ export default function DollhouseScene3D({
     window.addEventListener("touchend", handleTouchEnd);
 
     return () => {
+      cancelBackgroundPreload();
       if (animationId) {
         cancelAnimationFrame(animationId);
       }

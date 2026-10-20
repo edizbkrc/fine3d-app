@@ -10,6 +10,7 @@ import {
   resolveTagImageUrl,
 } from "@helpers/Common/tagFilters";
 import { resolveCdnImageUrl } from "@helpers/Common/cdnImageUrl";
+import { preloadFramesInBackground } from "@helpers/Common/backgroundFramePreload";
 import { ViewModeEnum } from "@enums/ViewModeEnum";
 import ViewerToolbar from "./layout/ViewerToolbar";
 import InteractivePolygons from "./polygons/InteractivePolygons";
@@ -606,14 +607,22 @@ export default function Scene3D({
 
     animate();
 
-    const preloadAllFrames = async () => {
-      const promises: Promise<void>[] = [];
-
-      for (let i = 0; i < totalFrames; i++) {
-        const url = getImageUrl(i);
-        if (!textureCacheRef.current.has(i) && url) {
-          const p = new Promise<void>((resolve) => {
-            textureLoader.load(url, (loadedTexture) => {
+    // Bütün kareler arka planda, sınırlı eşzamanlılıkla ve yakından uzağa (bkz. backgroundFramePreload).
+    const backgroundStartFrame =
+      initialFrameFromUrl !== null && initialFrameFromUrl >= 0 && initialFrameFromUrl < totalFrames
+        ? initialFrameFromUrl
+        : mainFrameAnchors?.[0] || 0;
+    const cancelBackgroundPreload = preloadFramesInBackground({
+      total: totalFrames,
+      startIndex: backgroundStartFrame,
+      shouldSkip: (i) => textureCacheRef.current.has(i) || !getImageUrl(i),
+      load: (i) =>
+        new Promise<void>((resolve) => {
+          const url = getImageUrl(i);
+          if (!url) return resolve();
+          textureLoader.load(
+            url,
+            (loadedTexture) => {
               const imageUrl = (url || "").toLowerCase();
               const isSVG =
                 imageUrl.includes(".svg") || imageUrl.includes("image/svg");
@@ -647,16 +656,12 @@ export default function Scene3D({
               loadedTexture.generateMipmaps = false;
               textureCacheRef.current.set(i, loadedTexture);
               resolve();
-            });
-          });
-          promises.push(p);
-        }
-      }
-
-      await Promise.all(promises);
-    };
-
-    preloadAllFrames();
+            },
+            undefined,
+            () => resolve(),
+          );
+        }),
+    });
 
     let isDragging = false;
     let dragStarted = false;
@@ -783,6 +788,7 @@ export default function Scene3D({
     window.addEventListener("touchend", handleTouchEnd);
 
     return () => {
+      cancelBackgroundPreload();
       if (animationId) {
         cancelAnimationFrame(animationId);
       }
